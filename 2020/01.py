@@ -201,7 +201,13 @@ if __name__ == "__main__":
         1456,
         1974,
     )
-
+    # part 1
+    print(
+        tuple(
+            (a, b, a * b)
+            for a in data for b in data for c in data
+            if a + b == 2020))
+    # part 2
     print(
         tuple(
             (a, b, c, a * b * c)
